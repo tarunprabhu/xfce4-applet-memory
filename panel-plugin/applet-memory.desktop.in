@@ -1,0 +1,9 @@
+[Xfce Panel]
+Type=X-XFCE-PanelPlugin
+Encoding=UTF-8
+Name=Memory Monitor
+Comment=Displays current memory usage
+Icon=xfce4-applet-memory
+X-XFCE-Module=appletmemory
+X-XFCE-Internal=false
+X-XFCE-API=2.0

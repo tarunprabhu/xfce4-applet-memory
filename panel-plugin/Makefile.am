@@ -1,18 +1,18 @@
 plugindir = $(libdir)/xfce4/panel/plugins
 plugin_LTLIBRARIES = libappletmemory.la
 
-libappletmemory_la_CFLAGS =									\
+libappletmemory_la_CPPFLAGS =									\
 	-DPACKAGE_LOCALE_DIR=\"$(localedir)\"			\
 	@LIBXFCE4UI_CFLAGS@												\
-	@LIBXFCE4PANEL_CFLAGS@
+	@LIBXFCE4PANEL_CFLAGS@  -g
 
 libappletmemory_la_LIBADD =		\
 	@LIBXFCE4UI_LIBS@						\
 	@LIBXFCE4PANEL_LIBS@
 
 libappletmemory_la_SOURCES =  \
-	memory.c
-
+	memory.cc \
+	memory-plugin.c
 
 libappletmemory_la_LDFLAGS = 																					\
 	-avoid-version 																											\

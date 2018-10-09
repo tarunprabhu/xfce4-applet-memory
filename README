@@ -1,5 +1,6 @@
-XFCE4 Memory Plugin
---------------------------
+XFCE Memory Applet
+------------------
 
-A simple plugin that displays an indicator in the panel showing memory usage
+Displays a dial and icon on the screen showing the percentage of memory and
+swap available.
 

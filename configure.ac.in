@@ -1,15 +1,13 @@
 dnl configure.ac
 dnl
-dnl xfce4-netload-plugin - Netload plugin for xfce4-panel
+dnl xfce4-applet-memory - Memory monitor applet for XFCE panel
 dnl
-dnl Copyright 2003 Benedikt Meurer <benedikt.meurer@unix-ag.uni-siegen.de>
-dnl Copyright 2010 Florian Rivoal <frivoal@xfce.org>
-dnl Copyright 2014 Mike Massonnet <mmassonnet@xfce.org>
+dnl Copyright 2018 Tarun Prabhu <tarun.prabhu@gmail.com>
 dnl
 
-m4_define([appletmemory_version],[1.3.1])
+m4_define([appletmemory_version],[1.0.0])
 
-AC_INIT([xfce4-netload-plugin], [appletmemory_version],
+AC_INIT([xfce4-applet-memory], [appletmemory_version],
 	[tarun.prabhu@gmail.org])
 AM_CONFIG_HEADER([config.h])
 AC_CONFIG_MACRO_DIRS([m4])
@@ -24,7 +22,7 @@ LT_PREREQ([2.2.6])
 LT_INIT([disable-static])
 
 dnl Check for basic programs
-AC_PROG_CC
+AC_PROG_CXX
 AC_PROG_INSTALL
 
 dnl Check for standard header files
@@ -49,7 +47,11 @@ XDT_FEATURE_DEBUG()
 AC_OUTPUT([
 Makefile
 panel-plugin/Makefile
+icons/Makefile
+icons/16x16/Makefile
 icons/24x24/Makefile
 icons/32x32/Makefile
 icons/48x48/Makefile
+icons/64x64/Makefile
+icons/128x128/Makefile
 ])

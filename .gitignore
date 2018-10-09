@@ -26,4 +26,5 @@ po/.intltool-merge-cache
 po/stamp-it
 po/Makefile.in.in
 po/POTFILES
+m4
 stamp-h1
